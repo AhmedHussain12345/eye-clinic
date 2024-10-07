@@ -57,6 +57,7 @@
             this.btn_adddoctor.TabIndex = 1;
             this.btn_adddoctor.Text = "Add New Doctor";
             this.btn_adddoctor.UseVisualStyleBackColor = false;
+            this.btn_adddoctor.Click += new System.EventHandler(this.btn_adddoctor_Click);
             // 
             // btn_backdoctor
             // 

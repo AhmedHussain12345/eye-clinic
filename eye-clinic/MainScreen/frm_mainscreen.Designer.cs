@@ -41,7 +41,7 @@
             this.btn_doctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_doctors.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_doctors.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_doctors.Location = new System.Drawing.Point(819, 103);
+            this.btn_doctors.Location = new System.Drawing.Point(819, 104);
             this.btn_doctors.Name = "btn_doctors";
             this.btn_doctors.Size = new System.Drawing.Size(427, 108);
             this.btn_doctors.TabIndex = 0;

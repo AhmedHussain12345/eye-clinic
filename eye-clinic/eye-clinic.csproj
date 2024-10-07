@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctors\frm_adddoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\frm_adddoctors.Designer.cs">
+      <DependentUpon>frm_adddoctors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctors\frm_doctors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Surgery\frm_surgery.Designer.cs">
       <DependentUpon>frm_surgery.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Doctors\frm_adddoctors.resx">
+      <DependentUpon>frm_adddoctors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\frm_doctors.resx">
       <DependentUpon>frm_doctors.cs</DependentUpon>
     </EmbeddedResource>

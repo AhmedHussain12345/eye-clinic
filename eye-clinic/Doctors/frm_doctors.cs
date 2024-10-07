@@ -28,5 +28,11 @@ namespace eye_clinic.Doctors
             //tbl_doctors.Size = new Size { Height =this.Size.Height - 40,Width = this.Size.Width - 80};
             //tbl_doctors.Refresh();
         }
+
+        private void btn_adddoctor_Click(object sender, EventArgs e)
+        {
+            Doctors.frm_adddoctors form = new Doctors.frm_adddoctors();
+            form.Show();
+        }
     }
 }
