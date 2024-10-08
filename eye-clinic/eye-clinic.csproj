@@ -142,6 +142,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyeClinic.Database\EyeClinic.Database.csproj">
+      <Project>{e1863906-0df0-4923-b959-1c7675dea730}</Project>
+      <Name>EyeClinic.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

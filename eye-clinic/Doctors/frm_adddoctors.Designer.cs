@@ -178,6 +178,7 @@
             this.btn_docsubmit.TabIndex = 12;
             this.btn_docsubmit.Text = "Submit";
             this.btn_docsubmit.UseVisualStyleBackColor = false;
+            this.btn_docsubmit.Click += new System.EventHandler(this.btn_docsubmit_Click);
             // 
             // lbl_docfrmheading
             // 
@@ -210,6 +211,7 @@
             this.Controls.Add(this.doc_name);
             this.Name = "frm_adddoctors";
             this.Text = "frm_adddoctors";
+            this.Load += new System.EventHandler(this.frm_adddoctors_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

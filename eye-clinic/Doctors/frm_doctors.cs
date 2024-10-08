@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -6,6 +7,7 @@ namespace eye_clinic.Doctors
 {
     public partial class frm_doctors : Form
     {
+        public static List<Doctor> Doctors = new List<Doctor>();
         public frm_doctors()
         {
             InitializeComponent();
@@ -32,7 +34,9 @@ namespace eye_clinic.Doctors
         private void btn_adddoctor_Click(object sender, EventArgs e)
         {
             Doctors.frm_adddoctors form = new Doctors.frm_adddoctors();
-            form.Show();
+            form.ShowDialog();
+            tbl_surgery.DataSource = null;
+            tbl_surgery.DataSource = Doctors;
         }
     }
 }
