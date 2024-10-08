@@ -64,6 +64,12 @@
     <Compile Include="MainScreen\frm_mainscreen.Designer.cs">
       <DependentUpon>frm_mainscreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Opd\frm_addopd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opd\frm_addopd.Designer.cs">
+      <DependentUpon>frm_addopd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Opd\frm_opd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainScreen\frm_mainscreen.resx">
       <DependentUpon>frm_mainscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opd\frm_addopd.resx">
+      <DependentUpon>frm_addopd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Opd\frm_opd.resx">
       <DependentUpon>frm_opd.cs</DependentUpon>

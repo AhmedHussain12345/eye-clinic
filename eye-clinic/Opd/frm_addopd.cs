@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace eye_clinic.Opd
 {
-    public partial class frm_opd : Form
+    public partial class frm_addopd : Form
     {
-        public frm_opd()
+        public frm_addopd()
         {
             InitializeComponent();
         }
 
-        private void btn_addopd_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-            Opd.frm_addopd form = new Opd.frm_addopd();
-            form.Show();
+
         }
     }
 }

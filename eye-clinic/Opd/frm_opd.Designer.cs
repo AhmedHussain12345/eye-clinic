@@ -57,6 +57,7 @@
             this.btn_addopd.TabIndex = 2;
             this.btn_addopd.Text = "Add New OPD";
             this.btn_addopd.UseVisualStyleBackColor = false;
+            this.btn_addopd.Click += new System.EventHandler(this.btn_addopd_Click);
             // 
             // btn_backopd
             // 
