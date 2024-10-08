@@ -57,6 +57,7 @@
             this.btn_addreports.TabIndex = 4;
             this.btn_addreports.Text = "Add New Reports";
             this.btn_addreports.UseVisualStyleBackColor = false;
+            this.btn_addreports.Click += new System.EventHandler(this.btn_addreports_Click);
             // 
             // btn_backreports
             // 

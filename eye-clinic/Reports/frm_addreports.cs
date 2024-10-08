@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace eye_clinic.Reports
 {
-    public partial class frm_reports : Form
+    public partial class frm_addreports : Form
     {
-        public frm_reports()
+        public frm_addreports()
         {
             InitializeComponent();
-        }
-
-        private void btn_addreports_Click(object sender, EventArgs e)
-        {
-            Reports.frm_addreports form = new Reports.frm_addreports();
-            form.Show();
         }
     }
 }
