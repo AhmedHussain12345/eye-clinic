@@ -12,9 +12,12 @@ namespace eye_clinic.Doctors
 {
     public partial class frm_adddoctors : Form
     {
-        public frm_adddoctors()
+        private Doctor _doctor = null;
+        public frm_adddoctors(int doctorId)
         {
+            _doctor = frm_doctors.Doctors.FirstOrDefault(x => x.DoctorId == doctorId);
             InitializeComponent();
+            SetDoctorData();
         }
 
         private void btn_docsubmit_Click(object sender, EventArgs e)
@@ -26,6 +29,7 @@ namespace eye_clinic.Doctors
             doctor.Message = richTextBox_msg.Text;
             doctor.Address = richTextBox_address.Text;
             doctor.Phone = textBox_phone.Text;
+            doctor.DoctorId = frm_doctors.Doctors.Count + 1;
             if (ValidateData(doctor))
             {
                 frm_doctors.Doctors.Add(doctor);
@@ -34,7 +38,21 @@ namespace eye_clinic.Doctors
             else
             {
                 MessageBox.Show("Please provide valid data");
-            }            
+            }
+        }
+
+        private void SetDoctorData()
+        {
+            if (_doctor != null)
+            {
+                textBox_name.Text = _doctor.Name;
+               // textBox_age.Text = _doctor.Age;
+                textBox_phone.Text = _doctor.Phone;
+
+
+
+
+            }
         }
 
         private bool ValidateData(Doctor doctor)

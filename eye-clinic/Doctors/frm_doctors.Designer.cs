@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_doctors = new System.Windows.Forms.Label();
             this.btn_adddoctor = new System.Windows.Forms.Button();
             this.btn_backdoctor = new System.Windows.Forms.Button();
             this.tbl_surgery = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_surgery)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_doctors
@@ -76,12 +81,37 @@
             // 
             this.tbl_surgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbl_surgery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbl_surgery.ContextMenuStrip = this.contextMenuStrip1;
             this.tbl_surgery.Location = new System.Drawing.Point(60, 282);
             this.tbl_surgery.Name = "tbl_surgery";
             this.tbl_surgery.RowHeadersWidth = 51;
             this.tbl_surgery.RowTemplate.Height = 24;
             this.tbl_surgery.Size = new System.Drawing.Size(1923, 769);
             this.tbl_surgery.TabIndex = 6;
+            this.tbl_surgery.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_surgery_CellEnter);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(128, 52);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // frm_doctors
             // 
@@ -99,6 +129,7 @@
             this.Load += new System.EventHandler(this.frm_doctors_Load);
             this.SizeChanged += new System.EventHandler(this.frm_doctors_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_surgery)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +141,8 @@
         private System.Windows.Forms.Button btn_adddoctor;
         private System.Windows.Forms.Button btn_backdoctor;
         private System.Windows.Forms.DataGridView tbl_surgery;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
